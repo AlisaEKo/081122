@@ -140,3 +140,26 @@ console.log(lowerCWord.toUpperCase());
 
 let foodWords2 = "Fruit, Meat, Vegetables";
 console.log(foodWords2.replace("Meat", "Tree"));
+
+
+extra exercise //
+
+write a function that recives a string and reverses it //
+for example "dracula" "alucard" //
+
+
+
+
+function reverseString(input) {
+    let localString = "";
+    for (let i = 0; i < input.length; i++)
+    {
+        localString += input[input.length -1 -i];
+    }
+    return localString;
+}
+
+
+let word = "roman";
+word = reverseString(word);
+console.log(word);
