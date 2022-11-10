@@ -163,3 +163,30 @@ function reverseString(input) {
 let word = "roman";
 word = reverseString(word);
 console.log(word);
+
+
+const rWord = "alisa";
+let i = rWord.length;
+while (i--) {
+    console.log(rWord[i]);
+}
+
+
+const s_word = 'alisa';
+const rev = [...s_word]
+    .reverse()
+    .join('');
+
+console.log(rev);
+
+
+let modEx = 2356;
+let sumDigit = 0;
+
+while (modEx) {
+    sumDigit += modEx % 10;
+    modEx = Math.floor(modEx / 10);
+}
+
+console.log(sumDigit);
+
